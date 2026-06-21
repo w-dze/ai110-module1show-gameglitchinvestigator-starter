@@ -55,6 +55,7 @@ AI helped me understand these as regression tests. It helped me think through th
 
 - How would you explain Streamlit "reruns" and session state to a friend who has never used Streamlit?
 
+Streamlit works by rerunning the entire Python script from top to bottom whenever a user interacts with the app, which means that any regular variables you create are reset each time the script reruns. To keep information between reruns, Streamlit provides session state, which acts like a persistent storage area for each user's session. You can think of it as a backpack that stays with the user while the script repeatedly restarts. For example, if you are building a counter, storing the count in a normal variable would reset it to zero on every interaction, but storing it in st.session_state allows the value to persist across reruns.
 ---
 
 ## 5. Looking ahead: your developer habits
@@ -63,3 +64,9 @@ AI helped me understand these as regression tests. It helped me think through th
   - This could be a testing habit, a prompting strategy, or a way you used Git.
 - What is one thing you would do differently next time you work with AI on a coding task?
 - In one or two sentences, describe how this project changed the way you think about AI generated code.
+
+One habit I want to reuse in future projects is writing and running tests frequently to verify that my code works as expected. Testing helped me catch bugs early and gave me confidence that changes I made did not break existing functionality.
+
+One thing I would do differently next time when working with AI on a coding task is spend more time asking the AI to explain its solutions instead of immediately accepting them. Understanding the reasoning behind the code helps me learn the concepts and makes it easier to debug or modify the solution later.
+
+This project changed the way I think about AI-generated code by showing me that AI is a useful tool, but not a replacement for understanding the code yourself. I learned that the best results come from treating AI as a collaborator—using it to generate ideas and solutions while still testing, verifying, and learning from its output.
